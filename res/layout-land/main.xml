@@ -1,0 +1,69 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:padding="30dip"
+        tools:context=".Asteroides" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:text="@string/app_name"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" 
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button01"
+                    style="@style/TextoAsteroides.Botones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="lanzarJuego"
+                    android:text="@string/jugar" />
+
+                <Button
+                    android:id="@+id/button02"
+                    style="@style/TextoAsteroides.Botones"            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/configurar" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button03"
+                    style="@style/TextoAsteroides.Botones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acercade" />
+
+                <Button
+                    android:id="@+id/button04"
+                    style="@style/TextoAsteroides.Botones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/puntuaciones" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
